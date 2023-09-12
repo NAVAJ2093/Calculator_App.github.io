@@ -1,0 +1,100 @@
+/* calculator.css */
+
+body {
+  width: 300px; /* Set a fixed width for the entire app */
+  height: 400px; /* Set a fixed height for the entire app */
+  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center;
+  background-color: #f0f0f0; /* Background color for the entire app */
+}
+
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 100%; /* Use 100% height to fill the entire app height */
+  width: 100%; /* Use 100% width to fill the entire app width */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center;
+  background-color: #9ba4cc;
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.calculator {
+  width: 280px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  font-size: 36px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5; /* Background color for the display */
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.button {
+  font-size: 24px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Background color for buttons */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  color: #333;
+}
+
+.button:hover {
+  background-color: #d0d0d0; /* Hover background color for buttons */
+}
+
+/* Operator buttons */
+.operator-button {
+  background-color: #f0a000;
+  color: #fff;
+}
+
+.operator-button:hover {
+  background-color: #d08000;
+}
+
+/* Clear button */
+.clear-button {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+.clear-button:hover {
+  background-color: #e53a00;
+}
+
+/* Equals button */
+.equals-button {
+  background-color: #008000;
+  color: #fff;
+}
+
+.equals-button:hover {
+  background-color: #006400;
+}
